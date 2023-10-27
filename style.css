@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f1d6;
+  color: #111;
+
+}
+
+h1 {
+  position: relative;
+  margin-left: 210px;
+  margin-top: 12px;
+}
+
+.logo {
+  width: 100px;
+  height: 150px;
+  background-color: #84dc58;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1440px;
+  height: 2599px;
+  border: 1px solid red;
+  margin: 20px auto
+}
+
+.cards {
+  background-color: #155;
+  border: 1px solid tomato;
+}
+
+.one {
+  width: 120px;
+  height: 600px;
+}
+
+.two {
+  width: 717px;
+  height: 1697px;
+}
+
+.three {
+  width: 351px;
+  height: 664px;
+  margin-top: 300px;
+}
+
+.four {
+  width: 120px;
+  height: 600px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 24px;
+}
+
+.card-items {
+  background-color: #d18c73;
+  width: 717px;
+  height: 365px;
+  border: 1px solid #111;
+}
+
+.cards-container--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px;
+}
+
+.grid-cards {
+  width: 342px;
+  height: 278px;
+  background-color: #84dc58;
+  justify-self: center;
+}
+
+.grid-cards:last-child {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  background-color: #91772f;
+  width: 717px;
+}
